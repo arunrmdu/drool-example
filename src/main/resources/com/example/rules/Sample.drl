@@ -1,0 +1,8 @@
+package com.example.rules;
+
+rule "Sample Rule"
+when
+    $i : Integer( this > 5 )
+then
+    System.out.println("Rule triggered for value: " + $i);
+end
